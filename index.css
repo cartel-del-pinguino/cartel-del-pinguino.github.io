@@ -1,0 +1,215 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* animation: fadeIn 1s ease-out; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+nav.hidden {
+        transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+nav.showing {
+    transform: translateY(0);
+}
+nav a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    background: url('header-background.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+    height: 460px;
+}
+
+.header img {
+    width: 150px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 1.2em;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Headers */
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+ /* Section Headers */
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        p {
+            line-height: 1.6;
+        }
+/* Temario Section */
+        .li-temario {
+            font-weight: bold;
+        }
+        .temario-section ul {
+            list-style: none;
+            padding: 10px;
+        }
+        .temario-section ul li {
+            margin-bottom: 10px;
+        }
+        .temario-section ul li ul {
+            margin-left: 20px;
+            font-weight: normal;
+        }
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Organizers Section */
+        .organizers {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .organizer {
+            max-width: 200px;
+            margin: 10px;
+        }
+        .organizer img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .organizer h3 {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .organizer p {
+            color: #666;
+            font-style: italic;
+        }
+
+
+
+/* Timeline CSS */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #333;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-time {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border-left: 4px solid #333;
+}
+
+.timeline-event:before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
