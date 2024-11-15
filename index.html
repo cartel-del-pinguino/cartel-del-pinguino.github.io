@@ -1,265 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Cártel del Pingüino - Curso de Linux</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* General Styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            scroll-behavior: smooth;
-        }
-
-        /* Animation for Fade-In */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Animation for Nav Links */
-        @keyframes blink {
-            0% { color: #fff; }
-            50% { color: #ddd; }
-            100% { color: #fff; }
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #444;
-            text-align: center;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        animation: fadeIn 1s ease-out;
-        heigth: 50px
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px;
-            font-weight: bold;
-            transition: color 0.3s;
-            cursor: pointer;
-        }
-        nav a:hover {
-            animation: blink 0.6s alternate infinite;
-        }
-
-        /* Header */
-        .header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            animation: fadeIn 1s ease-out;
-            animation-delay: 0.5s;
-            animation-fill-mode: both;
-        }
-        .header img {
-            width: 150px;
-            border-radius: 50%;
-        }
-        .header h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            animation: fadeIn 1.5s ease-out;
-            animation-delay: 1s;
-            animation-fill-mode: both;
-        }
-
-        /* Section Headers */
-        h2 {
-            color: #333;
-            font-size: 1.8em;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        p {
-            line-height: 1.6;
-        }
-
-        /* Temario Section */
-        .li-temario {
-            font-weight: bold;
-        }
-        .temario-section ul {
-            list-style: none;
-            padding: 10px;
-        }
-        .temario-section ul li {
-            margin-bottom: 10px;
-        }
-        .temario-section ul li ul {
-            margin-left: 20px;
-            font-weight: normal;
-        }
-
-        /* Organizers Section */
-        .organizers {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .organizer {
-            max-width: 200px;
-            margin: 10px;
-        }
-        .organizer img {
-            width: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .organizer h3 {
-            font-size: 1.2em;
-            color: #333;
-        }
-        .organizer p {
-            color: #666;
-            font-style: italic;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation -->
     <nav>
-        <a href="#introduccion">Introducción</a>
-        <a href="#temario">Temario</a>
-        <a href="#metodologia">Metodología</a>
-        <a href="#organizadores">Organizadores</a>
+      <a href="#introduccion">Introducción</a>
+      <a href="#temario">Temario</a>
+      <a href="#organizadores">Organizadores</a>
+      <a href="#cronograma">Cronograma</a>
     </nav>
 
     <!-- Header -->
     <header class="header">
-        <img src="logo.jpeg" alt="Logo del Cartel del Pingüino">
-        <h1>El Cártel del Pingüino</h1>
-        <p>Curso de Linux - Aprende a dominar el sistema operativo del pingüino</p>
+      <img src="logo.jpeg" alt="Logo del Cartel del Pingüino">
+      <h1>El Cártel del Pingüino</h1>
+      <p>Curso de Linux - Aprende a dominar el sistema operativo del pingüino</p>
     </header>
 
     <!-- Main Content -->
     <div class="container">
-        <!-- Introducción -->
-        <section id="introduccion">
-            <h2>Introducción</h2>
-            <p>Bienvenidos al curso de Linux <strong>"El Cártel del Pingüino"</strong>, un viaje completo para dominar el mundo del software libre y la administración de sistemas con Linux. Este curso está diseñado para quienes desean aprender desde cero hasta un nivel avanzado, explorando comandos, configuraciones y herramientas esenciales del entorno Linux. Únete a nuestra comunidad y aprende a manejar el sistema operativo que impulsa servidores, supercomputadoras y millones de dispositivos alrededor del mundo.</p>
-        </section>
+      <!-- Introducción -->
+      <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Bienvenidos al curso de Linux <strong>"El Cártel del Pingüino"</strong>, un viaje completo para dominar el mundo del software libre y la administración de sistemas con Linux. Este curso está diseñado para quienes desean aprender algo nuevo y no saben como iniciar hackear. El propósito de este curso es darte ese impulso para hacer un cambio y que no te veas abrumado de aprender nuevas cosas, nosotros como estudiantes sabemos lo que es lanzarse a algo nuevo sin tener alguna idea, por lo cual queremos que se pierda el miedo de dar ese salto y que siempre intentes hacer cosas nuevas. </p>
+      </section>
 
-        <!-- Temario -->
-        <section id="temario">
-            <h2>Temario</h2>
-            <div class="temario-section">
-                <ul>
-                    <li class="li-temario">1. Introducción a Linux
-                        <ul>
-                            <li>¿Qué es Linux?</li>
-                            <li>Distribuciones populares</li>
-                            <li>Software libre y licencias</li>
-                        </ul>
-                    </li>
-                    <li class="li-temario">2. Instalación de Linux
-                        <ul>
-                            <li>Elección de la distribución adecuada</li>
-                            <li>Proceso de instalación</li>
-                            <li>Configuración inicial del sistema</li>
-                        </ul>
-                    </li>
-                    <li class="li-temario">3. Uso del Terminal
-                        <ul>
-                            <li>Comandos básicos de navegación</li>
-                            <li>Gestión de archivos y permisos</li>
-                            <li>Administración de procesos</li>
-                            <li>Gestión de paquetes y repositorios</li>
-                        </ul>
-                    </li>
-                    <li class="li-temario">4. Control de versiones con Git y GitHub
-                        <ul>
-                            <li>Conceptos de control de versiones</li>
-                            <li>Comandos básicos de Git</li>
-                            <li>Flujos de trabajo y colaboración en GitHub</li>
-                        </ul>
-                    </li>
-                    <li class="li-temario">5. Entornos Gráficos
-                        <ul>
-                            <li>Principales entornos de escritorio (Gnome, KDE Plasma, etc.)</li>
-                            <li>Configuración y personalización</li>
-                            <li>Gestores de ventanas ligeros (i3, bspwm, Hyprland)</li>
-                        </ul>
-                    </li>
-                    <li class="li-temario">6. Editores de Texto en Linux
-                        <ul>
-                            <li>Emacs: Introducción y comandos esenciales</li>
-                            <li>Vim/Nvim: Navegación y edición avanzada</li>
-                            <li>Nano: Edición rápida y fácil</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- Temario -->
+      <section id="temario">
+        <h2>Temario</h2>
+        <div class="temario-section">
+          <ul>
+            <li class="li-temario">1. Introducción a Linux
+              <ul>
+                <li>- ¿Qué es Linux?</li>
+                <li>- Distribuciones populares</li>
+                <li>- Software libre y licencias</li>
+              </ul>
+            </li>
+            <li class="li-temario">2. Instalación de Linux
+              <ul>
+                <li>- Elección de la distribución adecuada</li>
+                <li>- Proceso de instalación</li>
+                <li>- Configuración inicial del sistema</li>
+              </ul>
+            </li>
+            <li class="li-temario">3. Uso del Terminal
+              <ul>
+                <li>- Comandos básicos de navegación</li>
+                <li>- Gestión de archivos y permisos</li>
+                <li>- Administración de procesos</li>
+                <li>- Gestión de paquetes y repositorios</li>
+              </ul>
+            </li>
+            <li class="li-temario">4. Control de versiones con Git y GitHub
+              <ul>
+                <li>- Conceptos de control de versiones</li>
+                <li>- Comandos básicos de Git</li>
+                <li>- Flujos de trabajo y colaboración en GitHub</li>
+              </ul>
+            </li>
+            <li class="li-temario">5. Entornos Gráficos
+              <ul>
+                <li>- Principales entornos de escritorio (Gnome, KDE Plasma, etc.)</li>
+                <li>- Configuración y personalización</li>
+                <li>- Gestores de ventanas ligeros (i3, bspwm, Hyprland)</li>
+              </ul>
+            </li>
+            <li class="li-temario">6. Editores de Texto en Linux
+              <ul>
+                <li>- Emacs: Introducción y comandos esenciales</li>
+                <li>- Vim/Nvim: Navegación y edición avanzada</li>
+                <li>- Nano: Edición rápida y fácil</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Metodología -->
-        <section id="metodologia">
-            <h2>Metodología</h2>
-            <p>El curso combina teoría con prácticas en tiempo real. Cada módulo incluye ejercicios interactivos y tareas para aplicar lo aprendido en escenarios reales. Al finalizar, serás capaz de administrar sistemas Linux, trabajar con control de versiones, y personalizar entornos de trabajo según tus necesidades.</p>
-        </section>
-
-        <!-- Organizadores -->
-        <!-- Organizadores -->
-    <section id="organizadores">
+      <!-- Organizadores -->
+      <section id="organizadores">
         <h2>Organizadores</h2>
         <div class="organizers">
-            <div class="organizer">
-                <h3>Braulio Sánchez</h3>
-                <div class="social-links">
-                    <a href="https://github.com/braulio-sanchez" class="github" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/braulio-sanchez" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
+          <div class="organizer">
+            <h3>Braulio Sánchez</h3>
+            <div class="social-links">
+              <a href="https://github.com/braulio-sanchez" class="github" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/braulio-sanchez" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="organizer">
-                <h3>Alan Torres</h3>
-                <div class="social-links">
-                    <a href="https://github.com/alan-torres" class="github" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/alan-torres" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
+          </div>
+          <div class="organizer">
+            <h3>Alan Torres</h3>
+            <div class="social-links">
+              <a href="https://github.com/alan-torres" class="github" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/alan-torres" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
-            <div class="organizer">                     
-                <h3>Fausto Medina</h3>
-                <div class="social-links">
-                    <a href="https://github.com/fausto-medina" class="github" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/fausto-medina" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
+          </div>
+          <div class="organizer">                     
+            <h3>Fausto Medina</h3>
+            <div class="social-links">
+              <a href="https://github.com/fausto-medina" class="github" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/fausto-medina" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+      <!-- Cronograma -->
+      <section id="cronograma">
+        <h2>Cronograma</h2>
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="timeline-time">10:00 AM</div>
+            <div class="timeline-content">
+              <h3>Introducción a Linux</h3>
+              <p>Presentación de Linux, sus distribuciones y el concepto de software libre.</p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-time">11:30 AM</div>
+            <div class="timeline-content">
+              <h3>Instalación de Linux</h3>
+              <p>Guía paso a paso sobre la elección de una distribución y la instalación en el sistema.</p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-time">1:00 PM</div>
+            <div class="timeline-content">
+              <h3>Uso del Terminal</h3>
+              <p>Introducción a los comandos básicos, gestión de archivos y administración de procesos.</p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-time">2:30 PM</div>
+            <div class="timeline-content">
+              <h3>Control de versiones con Git y GitHub</h3>
+              <p>Conceptos básicos de control de versiones y flujos de trabajo en Git y GitHub.</p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-time">4:00 PM</div>
+            <div class="timeline-content">
+              <h3>Entornos Gráficos</h3>
+              <p>Exploración y configuración de los principales entornos de escritorio.</p>
+            </div>
+          </div>
+          <div class="timeline-event">
+            <div class="timeline-time">5:30 PM</div>
+            <div class="timeline-content">
+              <h3>Editores de Texto en Linux</h3>
+              <p>Introducción a Emacs, Vim y Nano, editores esenciales en el entorno Linux.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>El Cártel del Pingüino - Curso de Linux | <a href="#" style="color: #fff; text-decoration: underline;">Foro de la Comunidad</a> | <a href="#" style="color: #fff; text-decoration: underline;">Repositorio GitHub</a></p>
+      <p>El Cártel del Pingüino - Curso de Linux | <a href="#" style="color: #fff; text-decoration: underline;">Foro de la Comunidad</a> | <a href="#" style="color: #fff; text-decoration: underline;">Repositorio GitHub</a></p>
     </footer>
-</body>
+    <script>
+      let lastScrollTop = 0;
+      const nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function() {
+          let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (scrollTop === 0) {
+      // Si está en la parte superior de la página, mostrar el nav
+      nav.classList.remove('hidden');
+    } else {
+      // Si no está en la parte superior de la página, esconder el nav
+      nav.classList.add('hidden');
+    }
+          
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Evita números negativos
+      });
+    </script>
+  </body>
 </html>
